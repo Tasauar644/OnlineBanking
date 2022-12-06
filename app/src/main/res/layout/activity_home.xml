@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:background="@drawable/homebackground">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#002828"
+        android:src="@drawable/homebanner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="OBMS"
+        android:textColor="#ffffff"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/imageView8"
+        app:layout_constraintHorizontal_bias="0.578"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/balanceButton"
+        android:layout_width="208dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="83dp"
+        android:backgroundTint="#f5f5f5"
+        android:text="Balance"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-50dp"
+        android:layout_marginTop="-50dp"
+        android:src="@drawable/home"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="38dp"
+        android:src="@drawable/balanceicon"
+        app:layout_constraintEnd_toStartOf="@+id/balanceButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/debitButton"
+        android:layout_width="208dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="83dp"
+        android:backgroundTint="#f5f5f5"
+        android:text="Debit"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/balanceButton" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/debiticon"
+        app:layout_constraintEnd_toStartOf="@+id/debitButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <Button
+        android:id="@+id/creditButton"
+        android:layout_width="208dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="83dp"
+        android:backgroundTint="#f5f5f5"
+        android:text="credit"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/debitButton" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="2dp"
+        android:src="@drawable/crediticon"
+        app:layout_constraintEnd_toStartOf="@+id/creditButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <Button
+        android:id="@+id/CashoutButton"
+        android:layout_width="208dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="83dp"
+        android:backgroundTint="#f5f5f5"
+        android:text="cash out"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/creditButton" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="89dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="2dp"
+        android:src="@drawable/cashouticon"
+        app:layout_constraintEnd_toStartOf="@+id/CashoutButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <Button
+        android:id="@+id/SendMoneyButton"
+        android:layout_width="208dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="83dp"
+        android:backgroundTint="#f5f5f5"
+        android:text="Send money"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:layout_constraintTop_toBottomOf="@+id/CashoutButton" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="78dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="2dp"
+        android:src="@drawable/money"
+        app:layout_constraintEnd_toStartOf="@+id/SendMoneyButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <Button
+        android:id="@+id/HistoryButton"
+        android:layout_width="212dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="79dp"
+        android:backgroundTint="#ffffff"
+        android:text="History"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SendMoneyButton" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
